@@ -1,0 +1,9 @@
+Create a new React app
+
+npx create-react-app my-react-app
+
+Run React App go in the app directory then
+npm start
+
+Started on 
+localhost:3000

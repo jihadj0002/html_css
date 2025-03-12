@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+</head>
+<body>
+<h2>Demo JavaScript in Head</h2>
+
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+or
+<!-- 
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+-->
+
+</body>
+</html>
+
+
+
+
+Inside Of HTML with Script
+<script src="myScript.js"></script>
+
+
+
+
+Writing into an HTML element, using innerHTML or innerText.
+Writing into the HTML output using document.write().
+Writing into an alert box, using window.alert().
+Writing into the browser console, using console.log().
+
+
+
+// is comment in javascript
+/*
+Big Comment
+*/
+
+Keyword	Description
+
+For Declaring Variable you dont need <var> or <let> each time
+You can write
+x = 5;
+y = 6;
+z = x + y;
+
+var 	    Declares a variable
+let 	    Declares a block variable
+const   	Declares a block constant
+if  	    Marks a block of statements to be executed on a condition
+switch  	Marks a block of statements to be executed in different cases
+for	        Marks a block of statements to be executed in a loop
+function	Declares a function
+return	    Exits a function
+try	        Implements error handling to a block of statements
+
+for declaring an array we need const:
+const name = ["Jubayer", "Ahamed", "Jihad"];
+name[0]         #prints Jubayer
+
+Also
+
+let arr = [ ];
+let arr = new Array(0);
+let arr = Array();
+
+
+// You can add an element:
+name.push("Audi");
+// You can create a const object:
+const car = {type:"Fiat", model:"500", color:"white"};
+// You can change a property:
+car.color = "red";
+// You can add a property:
+car.owner = "Johnson";
+
+#Print inside the console
+console.log(5 + 6);
+
+document.getElementById('demo').innerHTML = 'Hello JavaScript';
+
+document.getElementById("demo").style.fontSize = "35px";
+
+document.getElementById("demo").innerText = "Hello World";
+
+#Creates a new page with the input
+document.write(5 + 6); 
+document.write(<name>); 
+
+or 
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+#For alert which is like popup
+window.alert(5 + 6);
+or
+alert(5 + 6);
+
+For Print the pages
+<button onclick="window.print()">Print this page</button>
+
+Back to previous page
+window.history.back()
+
+#browser and device information
+console.log(window.navigator.userAgent);
+
+
+
+// Create an Object
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+
+
+const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+// Create an Object
+const person = {};
+// Add Properties
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue";
+
+Or 
+
+// Create an Object
+const person = new Object();
+// Add Properties
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue";
+
+#Delete property
+delete person.age;
