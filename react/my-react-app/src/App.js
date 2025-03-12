@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>Hello World</h1>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,6 +19,16 @@ function App() {
           Learn React
         </a>
       </header>
+    </div>
+  );
+}
+
+function newApp() {
+  return (
+    <div className="newApp">
+      <header className="app-Header">
+        <h2>kAJSNdjkasn</h2>
+      </header>   
     </div>
   );
 }
