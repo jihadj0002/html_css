@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import MovieCard from './components/MovieCard'
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Hello World</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src /App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -23,6 +24,7 @@ function App() {
   );
 }
 
+
 function newApp() {
   return (
     <div className="newApp">
@@ -33,4 +35,19 @@ function newApp() {
   );
 }
 
-export default App;
+
+
+function testApp() {
+  return (
+    <>
+    <div>
+      
+      <MovieCard movie={{title:"Hello", release_date: "Dont Know", url:"https://www.normans.co.uk/cdn/shop/articles/acoustic-vs-classical_7aa53ad4-bd8b-4b5e-94be-7cb6fde78a4b.jpg"}}/>
+      <MovieCard movie={{title:"World", release_date: "Dontasdlkm Know", url:"https://www.normans.co.uk/cdn/shop/articles/acoustic-vs-classical_7aa53ad4-bd8b-4b5e-94be-7cb6fde78a4b.jpg"}}/>
+    </div>
+    </>
+  );
+}
+
+
+export default testApp;
